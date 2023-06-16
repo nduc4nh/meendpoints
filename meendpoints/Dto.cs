@@ -15,6 +15,7 @@ class MessResponse{
         // return entry[0].messaging[0].message["text"];
         return "";
     }
+    
 
     // public long getTimestamp(){
     //     return entry[0]["messaging"][0]["timestamp"]

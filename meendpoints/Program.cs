@@ -57,12 +57,17 @@ app.MapPost("/api/v2/message", (MessResponse? messResonse) =>{
     Dictionary<String, String>? creds = JsonSerializer.Deserialize<Dictionary<String, String>>(File.ReadAllText("./adls2.json"));
     String? accessToken = creds["accessToken"];
     //Specify client credential
-    StorageSharedKeyCredential cred = new StorageSharedKeyCredential("phatstrg", accessToken);
-    String dfsUri = "https://" + "phatstrg" + ".dfs.core.windows.net";
+    // Phat
+    // StorageSharedKeyCredential cred = new StorageSharedKeyCredential("phatstrg", accessToken);
+    // String dfsUri = "https://" + "phatstrg" + ".dfs.core.windows.net";
+    // Duc Anh
+    StorageSharedKeyCredential cred = new StorageSharedKeyCredential("datakube", accessToken);
+    String dfsUri = "https://" + "datakube" + ".dfs.core.windows.net";
     
     //Create File System client using DataLakeServiceClient
     DataLakeServiceClient serviceClient = new DataLakeServiceClient(new Uri(dfsUri), cred);
-    DataLakeFileSystemClient fsClient = serviceClient.GetFileSystemClient("datalake-fake");
+    // DataLakeFileSystemClient fsClient = serviceClient.GetFileSystemClient("datalake-fake"); //Phat
+    DataLakeFileSystemClient fsClient = serviceClient.GetFileSystemClient("datalake"); // Duc Anh
 
     DataLakeDirectoryClient dirClient = fsClient.GetDirectoryClient("landing");
     if (!dirClient.Exists()) dirClient.Create();
@@ -99,3 +104,5 @@ app.MapPost("/api/v2/message", (MessResponse? messResonse) =>{
 
 
 app.Run("http://0.0.0.0:5093");
+
+//L038Q~OLuFY3PU2Ggh7~9ueIjVTVfUcFK99iUcnE

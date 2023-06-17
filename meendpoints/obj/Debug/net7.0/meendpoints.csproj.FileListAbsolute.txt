@@ -95,3 +95,4 @@ E:/codepsace/meendpoints/meendpoints/obj/Debug/net7.0/meendpoints.csproj.CopyCom
 /home/nducanh/Desktop/meendpoints/meendpoints/obj/Debug/net7.0/meendpoints.pdb
 /home/nducanh/Desktop/meendpoints/meendpoints/obj/Debug/net7.0/meendpoints.genruntimeconfig.cache
 /home/nducanh/Desktop/meendpoints/meendpoints/obj/Debug/net7.0/ref/meendpoints.dll
+/home/nducanh/Desktop/meendpoints/meendpoints/bin/Debug/net7.0/adls2.json

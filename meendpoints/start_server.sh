@@ -1,1 +1,1 @@
-ngrok http http://10.14.106.48:5093
+ngrok http 5093

@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\build\meendpoints.props" />
+  <Import Project="../build/meendpoints.props" />
 </Project>

@@ -51,8 +51,11 @@ app.MapPost("/api/v2/message", (MessResponse? messResonse) =>{
     string time = DateTime.Now.ToString("MM_dd_yyyy_hh_mm_ss");
     // File.WriteAllText($"./local_storage/{user}_{time}", responseJson);
     // return Results.Ok(messResonse);
-    String accessUrl = "https://phatstrg.blob.core.windows.net/datalake-fake?sp=racwdlmeop&st=2023-06-16T07:54:22Z&se=2023-06-30T15:54:22Z&spr=https&sv=2022-11-02&sr=c&sig=p%2FaDP%2Fes57gSphbdHGZmmiS1sGgTv%2B7OUFKab9Y33hY%3D";
-    String accessToken = "tIJqbVlUU8uOdfTNoXRlGMeNGG+/WycgbBTQTO9tUPnSb4dX0x7TqN4IHkGbHNSFVh4qV99mjNaq+AStlnVdUg==";
+
+
+    //Read creds
+    Dictionary<String, String>? creds = JsonSerializer.Deserialize<Dictionary<String, String>>(File.ReadAllText("./adls2.json"));
+    String? accessToken = creds["accessToken"];
     //Specify client credential
     StorageSharedKeyCredential cred = new StorageSharedKeyCredential("phatstrg", accessToken);
     String dfsUri = "https://" + "phatstrg" + ".dfs.core.windows.net";

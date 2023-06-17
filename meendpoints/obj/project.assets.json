@@ -488,25 +488,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\anhnd93\\.nuget\\packages\\": {}
+    "/home/nducanh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\codepsace\\meendpoints\\meendpoints\\meendpoints.csproj",
+      "projectUniqueName": "/home/nducanh/Desktop/meendpoints/meendpoints/meendpoints.csproj",
       "projectName": "meendpoints",
-      "projectPath": "E:\\codepsace\\meendpoints\\meendpoints\\meendpoints.csproj",
-      "packagesPath": "C:\\Users\\anhnd93\\.nuget\\packages\\",
-      "outputPath": "E:\\codepsace\\meendpoints\\meendpoints\\obj\\",
+      "projectPath": "/home/nducanh/Desktop/meendpoints/meendpoints/meendpoints.csproj",
+      "packagesPath": "/home/nducanh/.nuget/packages/",
+      "outputPath": "/home/nducanh/Desktop/meendpoints/meendpoints/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\anhnd93\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/nducanh/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+        "/home/nducanh/.dotnet/sdk/7.0.304/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -549,7 +549,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/home/nducanh/.dotnet/sdk/7.0.304/RuntimeIdentifierGraph.json"
       }
     }
   }
